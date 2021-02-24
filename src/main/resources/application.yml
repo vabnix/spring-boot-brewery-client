@@ -5,3 +5,12 @@ spring:
 vs:
   brewery:
     apiHost: http://localhost:8080
+  rest-template:
+    connectionManager:
+      maxTotal: 100
+      maxPerRoute: 20
+    requestConfig:
+      timeout:
+        request: 3000
+        socket: 3000
+

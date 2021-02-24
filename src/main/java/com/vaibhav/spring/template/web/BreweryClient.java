@@ -13,7 +13,7 @@ import java.net.URI;
 @Component
 @ConfigurationProperties(value = "vs.brewery", ignoreUnknownFields = false)
 public class BreweryClient {
-    @Value("vs.brewery.apiHost")
+    @Value("${vs.brewery.apiHost}")
     private String apiHost;
 
     public final String BEER_PATH = "/api/v1/beers/";
